@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:SparkSkin xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		xmlns:mx="library://ns.adobe.com/flex/halo" 
+		xmlns:s="library://ns.adobe.com/flex/spark">
+	
+	<fx:Metadata>
+		[HostComponent("spark.components.BorderContainer")]
+	</fx:Metadata> 
+	
+	<s:states>
+		<s:State name="normal" />
+		<s:State name="disabled" />
+	</s:states>
+	
+	<!-- This image fill also specifies padding around it -->
+	<s:Rect id="backgroundRect" left="2" right="2" top="2" bottom="2">
+		<s:fill>
+			<s:BitmapFill source="@Embed('assets/image.png')"/>
+		</s:fill>
+	</s:Rect>	
+	
+	<s:Group id="contentGroup" alpha="0.8"  color="0x123043" fontWeight="bold" left="0" right="0" top="0" bottom="0" />
+	
+</s:SparkSkin>
